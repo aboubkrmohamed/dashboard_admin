@@ -1,0 +1,111 @@
+
+ body
+ {
+   overflow-x: hidden;
+   background-color: #fcfcfc;
+ }
+ 
+ a
+ {
+    text-decoration: none;
+ }
+
+ li
+ {
+    list-style: none;
+    /* Font Family:  */
+
+ }
+
+ *
+ {
+   font-family: PingARLT, serif;
+
+ }
+
+
+ 
+ .row 
+ {
+  left: 0;
+  margin: 0;
+  width: 100%;
+ }
+
+ .main-home 
+ {
+    width: 100%;
+    /* padding:4% 3%; */
+ }
+
+
+ /* dashbord_admin */
+
+ .dashbord_admin
+ {
+background-color:  rgba(0, 65, 77);
+padding: 30px 15px;
+
+ }
+
+ /* index_link */
+
+ .index_link a ,.index
+ {
+   color: #fff;
+ }
+
+.index_link .index
+{
+ 
+    font-size: 1.1rem;
+    transition: .5s;
+   padding: 5px 0px 5px 10px ; 
+}
+ 
+.index_link a 
+{
+    line-height: 30px;
+    font-size: 1rem;
+}
+ 
+ .active 
+ {
+   background-color: #003c47;
+   color: #73E7CC;
+   padding: 7px 2px;
+ }
+
+ .active .index  
+ {
+   color: #73E7CC;
+
+}
+
+
+/* section_form */
+
+ .section_form
+ {
+   background-color: #fff; 
+   /* box-shadow: 5px 5px 25px #ddd; */
+   margin-top: 10px;
+ }
+
+
+.logo_project 
+{
+   text-align: center;
+   border: dotted #cccccc 1px;
+   padding: 40px 10px 20px 10px;
+}
+ 
+.form-select  
+{
+   color: #444;
+}
+
+
+
+
+   
