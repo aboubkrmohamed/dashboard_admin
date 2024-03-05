@@ -46,7 +46,7 @@ overflow:hidden ;
  .dashbord_admin
  {
 background-color:  rgba(0, 65, 77);
-padding: 30px 15px;
+padding: 0px 15px;
 height: 100vh !important;
 overflow-y: scroll;
 overflow-x: hidden;
