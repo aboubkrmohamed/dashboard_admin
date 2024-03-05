@@ -3,6 +3,8 @@
  {
    overflow-x: hidden;
    background-color: #fcfcfc;
+   height: 100vh !important;
+overflow:hidden ;
  }
  
  a
@@ -45,8 +47,53 @@
  {
 background-color:  rgba(0, 65, 77);
 padding: 30px 15px;
-
+height: 100vh !important;
+overflow-y: scroll;
+overflow-x: hidden;
  }
+
+ /* user_name */
+
+ .user_name
+ {
+   text-align: end;
+   color: #fff;
+}
+
+/* vist_my_market */
+
+.vist_my_market
+{
+   border: 1px solid hsla(0,0%,100%,.2);
+   /* margin-right: 30%; */
+   width: 60%;
+   margin-right: auto;
+    border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+ }
+
+ 
+
+ .vist_my_market_icon
+ {
+background-color: hsla(0,0%,100%,.1);
+padding: 5px;
+width: 20px;
+height: 20px;
+
+border-radius: 50% 0% 0% 50%;
+
+  }
+
+
+.vist_my_market a
+{
+color: #fff;
+ }
+
 
  /* index_link */
 
@@ -88,8 +135,9 @@ padding: 30px 15px;
  .section_form
  {
    background-color: #fff; 
-   /* box-shadow: 5px 5px 25px #ddd; */
    margin-top: 10px;
+   height: 100vh !important;
+overflow-y: scroll;
  }
 
 
@@ -106,6 +154,93 @@ padding: 30px 15px;
 }
 
 
-
+.new_opation 
+{
+   background-color: #baf3e6;
+   padding:4px 12px ;
+   border-radius: 40px;
+}
 
    
+
+@media screen and (max-width:1350px) and (min-width:1200px) 
+{
+   .vist_my_market
+{
+   width: 80%;
+ }
+  
+}
+
+
+
+@media screen and (max-width:1200px) and (min-width:992px) 
+{
+   .vist_my_market
+{
+   width: 100%;
+ }
+  
+}
+
+
+
+
+@media screen and (max-width:992px) and (min-width: 768px)
+{
+ 
+/* vist_my_market */
+
+.vist_my_market
+{
+   width: 100%;   
+ }
+
+ 
+
+ .vist_my_market_icon
+ {
+padding: 2px;
+width: 15px;
+height: 15px;
+
+  }
+
+
+
+  
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+ 
+ body
+ {
+     height: auto !important;
+overflow: auto;
+ }
+ 
+
+ /* dashbord_admin */
+
+ .dashbord_admin
+ {
+ height: 100vh !important;
+overflow-y: scroll;
+overflow-x: hidden;
+ }
+
+
+ .section_form
+ {
+    height: auto!important;
+overflow-y: auto;
+ }
+
+  
+}
+
+
+
