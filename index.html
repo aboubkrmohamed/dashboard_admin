@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>لوحه التحكم </title>
+
     <link rel="icon" href="img/logo-wide.svg" type="image/x-icon">
 
+    <!-- fonts  -->
     <link rel="stylesheet" href="fonts/PingARLT-Medium.woff2">
+    <link rel="stylesheet" href="fonts/v1.woff2">
+   
+    <!-- style css -->
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="fonts/v1.woff2">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -239,71 +244,373 @@
      
         <div class="col-md-10 mt-3" >
             
-            <div class="section_form p-4 " >
+            <div class="section_main p-4 " >
                            
 
 
             <h3>  أضف أول منتج </h3>
             <p>ابدأ بإضافة تفاصيل أول منتج تود عرضه في متجرك. </p>
 
-            <form>
-                            <!-- logo project  -->
-            <div>
-                <h5>أضف صورة المنتج (اختياري) </h5>
-                <div class="logo_project">
-                    <label >اختار الصوره من الجهاز</label>
-                    
-                    <br>
-                    <input type="file" >
-                </div>
+            <!-- products -->
+            <div class="products">
 
+                    <div class="row">
+                        
+                    <div class="col-md-4"> 
+                        <div class="products_items">
+                            <img src="img/z48r3ld4TcpKnOxHqLqKJbCQKXB7bNUOMF3CFkZG.jpg" class="w-100">
+  
+    <div class="inpts_Group mt-3">
 
-            </div>
-
-            <!-- name product  -->
-            <div class="mt-5">
-                <div class="name_project">
-                    <h5 >اسم المنتج </h5>
-                    <!-- <br> -->
-                    <input type="text" placeholder="الرجاء ادخال اسم المنتج" class="form-control" required>
-                </div>
-
-
-            </div>
-
-                 <!-- price product  -->
-                 <div class="mt-5">
-                    <div class="name_project">
-                        <h5 >سعر المنتج </h5>
-                        <!-- <br> -->
-                        <input type="number" placeholder="حدد اسعار سعر المنتج" class="form-control" required>
-
-                    </div>
-    
-    
-                </div>
+        <i class="fa-solid fa-cube inpts_Group_icon pt-2 pb-2 pe-2"></i>
+        <input type="text" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" خدمة حسب الطلب - أدخل اسم المنتج ">
         
-                 <!-- quntite product  -->
-                 <div class="mt-5">
-                    <div class="name_project">
-                        <h5 >كميه المنتج </h5>
-                        <!-- <br> -->
-                        <input type="number" placeholder="حدد كميه المنتج" class="form-control" required>
-
-                    </div>
-    
-    
-                </div>
-        
-
+    </div>
  
-            <div class="w-100  mt-5" style="text-align:left;">
-                <button class="btn btn-primary pt-2 pb-2 ps-5 pe-5 mt-5" type="submit" style="font-size: 1.3rem; font-weight: 700;">التالي</button>
+        <!------------------------>
+  
+        <div class="inpts_Group mt-3">
+            <i class="fa-solid fa-coins inpts_Group_icon pt-2 pb-2 pe-2"></i>
+            <input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" السعر ">
+            <span class="input-group-text" style=" border-right: 2px solid #ddd;  ">ر.س</span>
 
+        </div>
+
+        <!--------------------->
+        
+        <div class="inpts_Group mt-3">
+            <i class="fa-solid fa-box-open inpts_Group_icon pt-2 pb-2 pe-2"></i>
+            <input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه ">
+             <span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-bell" style="color:  #adadad ;"></i></span>
+            <span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-infinity" style="color:  #adadad ;"></i></span>
+            <span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+        </div>
+
+
+        
+        <!--------------------->
+        
+        <div class="inpts_Group mt-3" style="justify-content: space-between;">
+            <!-- <input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه "> -->
+            
+            
+   
+            <select class="inpts_Group">
+                <option value="">اختار تصنيف المنتج </option>
+                <option value=""> قسم  الملابس </option>
+                <option value="">قسم العطور </option>
+                <option value="">قسم  الاكل</option>
+                <option value=""> قسم  الملابس </option>
+                <option value="">قسم العطور </option>
+                <option value="">قسم  الاكل</option>
+            </select>
+            
+            
+            
+            
+            
+            
+            <span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+        </div>
+
+        <!-- data & more-->
+        
+        <div class="btns_data_and_more mt-3">
+
+            <button class=" btn btn_data " type="button"  ><i class="fa-solid fa-sliders ps-1"></i> بيانات المنتج</button>
+
+
+            <button class=" btn btn_more" type="button">  المزيد <i class="fa-solid fa-angle-down pe-1"></i></button>
+        </div>
+        
+
+                <!-- subimt-->
+        
+                <div class="submit_btn mt-3">
+
+                    <button class=" btn  form-control" s type="submit" style="background-color: #baf3e6; font-size: 1.3rem;" > حفظ </button>
+        
+                        </div>
+                
+ 
+  </div>
+
+
+</div>
+
+
+
+<div class="col-md-4"> 
+    <div class="products_items">
+        <img src="img/z48r3ld4TcpKnOxHqLqKJbCQKXB7bNUOMF3CFkZG.jpg" class="w-100">
+
+<div class="inpts_Group mt-3">
+
+<i class="fa-solid fa-cube inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="text" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" خدمة حسب الطلب - أدخل اسم المنتج ">
+
+</div>
+
+<!------------------------>
+
+<div class="inpts_Group mt-3">
+<i class="fa-solid fa-coins inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" السعر ">
+<span class="input-group-text" style=" border-right: 2px solid #ddd;  ">ر.س</span>
+
+</div>
+
+<!--------------------->
+
+<div class="inpts_Group mt-3">
+<i class="fa-solid fa-box-open inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه ">
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-bell" style="color:  #adadad ;"></i></span>
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-infinity" style="color:  #adadad ;"></i></span>
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+</div>
+
+
+
+<!--------------------->
+
+<div class="inpts_Group mt-3" style="justify-content: space-between;">
+<!-- <input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه "> -->
+
+
+
+<select class="inpts_Group">
+<option value="">اختار تصنيف المنتج </option>
+<option value=""> قسم  الملابس </option>
+<option value="">قسم العطور </option>
+<option value="">قسم  الاكل</option>
+<option value=""> قسم  الملابس </option>
+<option value="">قسم العطور </option>
+<option value="">قسم  الاكل</option>
+</select>
+
+
+
+
+
+
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+</div>
+
+<!-- data & more-->
+
+<div class="btns_data_and_more mt-3">
+
+<button class=" btn btn_data " type="button"  ><i class="fa-solid fa-sliders ps-1"></i> بيانات المنتج</button>
+
+
+<button class=" btn btn_more" type="button">  المزيد <i class="fa-solid fa-angle-down pe-1"></i></button>
+</div>
+
+
+<!-- subimt-->
+
+<div class="submit_btn mt-3">
+
+<button class=" btn  form-control" s type="submit" style="background-color: #baf3e6; font-size: 1.3rem;" > حفظ </button>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="col-md-4"> 
+    <div class="products_items">
+        <img src="img/z48r3ld4TcpKnOxHqLqKJbCQKXB7bNUOMF3CFkZG.jpg" class="w-100">
+
+<div class="inpts_Group mt-3">
+
+<i class="fa-solid fa-cube inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="text" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" خدمة حسب الطلب - أدخل اسم المنتج ">
+
+</div>
+
+<!------------------------>
+
+<div class="inpts_Group mt-3">
+<i class="fa-solid fa-coins inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" السعر ">
+<span class="input-group-text" style=" border-right: 2px solid #ddd;  ">ر.س</span>
+
+</div>
+
+<!--------------------->
+
+<div class="inpts_Group mt-3">
+<i class="fa-solid fa-box-open inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه ">
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-bell" style="color:  #adadad ;"></i></span>
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-infinity" style="color:  #adadad ;"></i></span>
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+</div>
+
+
+
+<!--------------------->
+
+<div class="inpts_Group mt-3" style="justify-content: space-between;">
+<!-- <input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه "> -->
+
+
+
+<select class="inpts_Group">
+<option value="">اختار تصنيف المنتج </option>
+<option value=""> قسم  الملابس </option>
+<option value="">قسم العطور </option>
+<option value="">قسم  الاكل</option>
+<option value=""> قسم  الملابس </option>
+<option value="">قسم العطور </option>
+<option value="">قسم  الاكل</option>
+</select>
+
+
+
+
+
+
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+</div>
+
+<!-- data & more-->
+
+<div class="btns_data_and_more mt-3">
+
+<button class=" btn btn_data " type="button"  ><i class="fa-solid fa-sliders ps-1"></i> بيانات المنتج</button>
+
+
+<button class=" btn btn_more" type="button">  المزيد <i class="fa-solid fa-angle-down pe-1"></i></button>
+</div>
+
+
+<!-- subimt-->
+
+<div class="submit_btn mt-3">
+
+<button class=" btn  form-control" s type="submit" style="background-color: #baf3e6; font-size: 1.3rem;" > حفظ </button>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="col-md-4"> 
+    <div class="products_items">
+        <img src="img/z48r3ld4TcpKnOxHqLqKJbCQKXB7bNUOMF3CFkZG.jpg" class="w-100">
+
+<div class="inpts_Group mt-3">
+
+<i class="fa-solid fa-cube inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="text" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" خدمة حسب الطلب - أدخل اسم المنتج ">
+
+</div>
+
+<!------------------------>
+
+<div class="inpts_Group mt-3">
+<i class="fa-solid fa-coins inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" السعر ">
+<span class="input-group-text" style=" border-right: 2px solid #ddd;  ">ر.س</span>
+
+</div>
+
+<!--------------------->
+
+<div class="inpts_Group mt-3">
+<i class="fa-solid fa-box-open inpts_Group_icon pt-2 pb-2 pe-2"></i>
+<input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه ">
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-bell" style="color:  #adadad ;"></i></span>
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  "><i class="fa-solid fa-infinity" style="color:  #adadad ;"></i></span>
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+</div>
+
+
+
+<!--------------------->
+
+<div class="inpts_Group mt-3" style="justify-content: space-between;">
+<!-- <input type="number" class="bg-transparent form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" الكميه "> -->
+
+
+
+<select class="inpts_Group">
+<option value="">اختار تصنيف المنتج </option>
+<option value=""> قسم  الملابس </option>
+<option value="">قسم العطور </option>
+<option value="">قسم  الاكل</option>
+<option value=""> قسم  الملابس </option>
+<option value="">قسم العطور </option>
+<option value="">قسم  الاكل</option>
+</select>
+
+
+
+
+
+
+<span class="input-group-text" style=" border-right: 2px solid #ddd; background-color: #fcfcfc;  " > الخساره والمكسب</span>
+
+</div>
+
+<!-- data & more-->
+
+<div class="btns_data_and_more mt-3">
+
+<button class=" btn btn_data " type="button"  ><i class="fa-solid fa-sliders ps-1"></i> بيانات المنتج</button>
+
+
+<button class=" btn btn_more" type="button">  المزيد <i class="fa-solid fa-angle-down pe-1"></i></button>
+</div>
+
+
+<!-- subimt-->
+
+<div class="submit_btn mt-3">
+
+<button class=" btn  form-control" s type="submit" style="background-color: #baf3e6; font-size: 1.3rem;" > حفظ </button>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+                    <div class="col-md-4"> <h1>qwdewq</h1> </div>
+                    <div class="col-md-4"> <h1>qwdewq</h1> </div>
+
+                </div>
             </div>
 
 
-        </form>
 
             </div>
         </div>

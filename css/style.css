@@ -19,6 +19,29 @@ overflow:hidden ;
 
  }
 
+ input,select
+ {
+   color: #666565;
+   border: none !important;
+   outline: none;
+   font-family: inherit;
+   font-size: 1.1rem;
+ }
+
+ select
+ {
+   font-size: 1rem !important;
+ }
+
+ input:focus
+ {
+    border: none !important;
+ }
+
+ input:active
+ {
+    border: none !important;
+ }
  *
  {
    font-family: PingARLT, serif;
@@ -129,40 +152,73 @@ color: #fff;
 
 }
 
-
-/* section_form */
-
- .section_form
- {
-   background-color: #fff; 
-   margin-top: 10px;
-   height: 100vh !important;
-overflow-y: scroll;
- }
-
-
-.logo_project 
-{
-   text-align: center;
-   border: dotted #cccccc 1px;
-   padding: 40px 10px 20px 10px;
-}
  
-.form-select  
+ 
+/* section_main */
+
+
+.section_main 
 {
-   color: #444;
+   background-color: #fff;
+ height: 100vh !important;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+/* products items */
+
+.products_items
+{
+   border: 2px solid #eee;
+padding: 6px;
 }
 
 
-.new_opation 
+/* inpts_Group  1*/
+
+.inpts_Group
 {
-   background-color: #baf3e6;
-   padding:4px 12px ;
-   border-radius: 40px;
+background-color: transparent;
+border: 2px solid #eee;
+border-radius: 6px;
+/* padding: 3px 6px; */
+display: flex;
+align-items: center;
+justify-content: center;
+width: 90%;
 }
 
-   
+.inpts_Group_icon
+{
+   font-size: 1.3rem;
+   color: #adadad;
+}
 
+/* btns_data_and_more */
+
+.btns_data_and_more 
+{
+/* text-align: center; */
+   border: 2px solid #eee;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+ 
+
+.btn_more 
+{
+   border-right: 3px solid #eee;
+   padding-right: 20%;
+}
+
+
+
+
+
+/* media query  */
 @media screen and (max-width:1350px) and (min-width:1200px) 
 {
    .vist_my_market
