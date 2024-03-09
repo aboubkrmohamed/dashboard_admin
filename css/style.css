@@ -342,6 +342,24 @@ display: none;
    width: 100%;
  }
  
+ .footer_btn 
+ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #eee;
+ }
+ .footer_btn button 
+ {
+  background-color: #baf3e6;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  font-weight: 400;
+ }
+
+
+
 /* media query  */
 @media screen and (max-width:1350px) and (min-width:1200px) 
 {
