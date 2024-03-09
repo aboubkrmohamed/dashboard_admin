@@ -230,13 +230,13 @@ width: 90%;
    width: 100%;
    height: auto;
    overflow-y: scroll;
-   background-color: firebrick;
+   background-color: rgba(0, 0, 0,0.6);
    position: fixed;
    top: 0;
    left: 0;
    right: 0;
    bottom: 0;
-
+display: none;
    margin: 0 auto;
    /* text-align: center; */
    padding: 20px;
@@ -248,6 +248,7 @@ width: 90%;
  {
    background-color: #666565;
    margin: 2% 20%;
+   
  }
 
 
